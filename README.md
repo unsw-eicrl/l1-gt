@@ -1,16 +1,17 @@
-# L1-GT/500 (L1 gyro trolley)
+# L1-GT/500 (logistics gyro trolley / 500 height class)
 
-L1-GT is an open, wheeled-biped research platform. It is developed within the Embodied Intelligence & Collective Robotics studio (EICR) at UNSW.
+L1-GT is an open, wheeled-biped research platform, developed at UNSW.
+<img align="right" src="media/icons/l1-gt-500.png" width="300"/> 
 
-The platform explores dynamically stable mobility using a two-wheeled base combined with articulated leg structures and a modular upper body. It is inspired by earlier work on wheeled inverted-pendulum robots, including Fraunhofer IML’s evoBOT, and by more recent open platforms such as Upkie.
+The platform explores dynamically stable mobility using a two-wheeled base combined with articulated leg structures and a modular upper body. It is inspired by work on wheeled inverted-pendulum robots, in particular Fraunhofer IML’s evoBOT, and projects such as Upkie and Impulse. 
 
-The aim is not to optimise for a single task, but to provide a practical, buildable system for studying embodied control, learning, and robustness under real-world physical constraints.
+The aim is to provide a practical, buildable system for studying embodied control, learning, and robustness under real-world physical constraints.
 
 ---
 
 ## project status
 
-- **hardware:** initial design near complete (v0.x)
+- **hardware:** initial design near complete (for v0.1)
 - **electronics:** in development
 - **software and control:** in development
 
@@ -24,8 +25,8 @@ Many results in robot learning and control rely heavily on simulation fidelity o
 
 The design emphasises:
 - physical embodiment as part of the control problem
-- data-efficient learning in contact-rich settings
-- robustness rather than peak performance
+- data-efficient learning in a (contact-rich) system, where stability and motion depend continuously on physical interaction with the environment
+- simplicity and robustness 
 
 L1-GT is developed as research infrastructure. It is meant to be modified, rebuilt, and extended.
 
@@ -47,50 +48,14 @@ The intent is to support both algorithmic work and studies that explicitly link 
 
 ## repository structure
 
-The repository is organised by major subsystems. Each component has its own documentation, CAD, and bill of materials.
+The repository is organised by major components and overall project documentation. Each component has its own documentation, CAD, and bill of materials (click on the images).
 
-```text
-README.md
+### subsystems
+| | | |
+|---|---|---|
+| <div align="center">[<img src="media/icons/wheel.png" />](hardware/wheels/)<br/>[**wheels**](hardware/wheels/)</div> | <div align="center">[<img src="media/icons/leg.png" />](hardware/legs/)<br/>[**legs**](hardware/legs/)</div> | <div align="center">[<img src="media/icons/arm.png" />](hardware/arms/)<br/>[**arms**](hardware/arms/)</div> | 
+| <div align="center">[<img src="media/icons/bridge.png" />](hardware/bridge/)<br/>[**bridge**](hardware/bridge/)</div> | <div align="center">[<img src="media/icons/shell.png" />](hardware/shell/)<br/>[**shell**](hardware/shell/)</div> | <div align="center">[<img src="media/icons/docs.png" />](docs/)<br/>[**docs**](docs/)</div> | 
 
-hardware/
-├── wheels/
-│   ├── README.md
-│   ├── cad/
-│   ├── drawings/
-│   ├── bom/
-│   └── assembly/
-├── legs/
-│   ├── README.md
-│   ├── cad/
-│   ├── drawings/
-│   ├── bom/
-│   └── assembly/
-├── arms/
-│   ├── README.md
-│   ├── cad/
-│   ├── drawings/
-│   ├── bom/
-│   └── assembly/
-├── bridge/
-│   ├── README.md
-│   ├── cad/
-│   ├── drawings/
-│   ├── bom/
-│   └── assembly/
-└── shell/
-    ├── README.md
-    ├── cad/
-    ├── drawings/
-    ├── bom/
-    └── assembly/
-
-docs/
-├── README.md
-├── system-overview.md
-├── interfaces.md
-├── build-philosophy.md
-└── faq.md
-```
 
 
 Each hardware component directory typically contains:
@@ -104,7 +69,7 @@ Each hardware component directory typically contains:
 
 ## documentation
 
-The main entry point is this README.  
+The main entry point is this [README](docs/).  
 Detailed documentation lives alongside the design files in each subdirectory.
 
 ---
@@ -122,22 +87,22 @@ Different artefacts in this repository use different licences:
 - **documentation and original images:**  
   Creative Commons Attribution 4.0 (CC BY 4.0)
 
-See the `LICENSES/` directory for full licence texts.
+See the [`LICENSES/`](LICENSES/) directory for full licence texts.
 
 ---
 
 ## citation
 
 If you use L1-GT in academic work, please cite it.  
-A `CITATION.cff` file is provided to support standard citation workflows.
+A [`CITATION.cff`](CITATION.cff) file is provided to support standard citation workflows.
 
 ---
 
 ## related work and inspiration
 
-- Fraunhofer IML evoBOT  
-- Upkie open wheeled-biped robot  
-- Independent wheeled-biped projects such as *Impulse* by Aaed Musa
+- Fraunhofer [IML evoBOT ⧉](https://www.iml.fraunhofer.de/en/fields_of_activity/material-flow-systems/iot-and-embedded-systems/evobot.html)
+- [Upkie ⧉](https://github.com/upkie/upkie) open-source wheeled biped robot  
+- [Impulse ⧉](https://www.aaedmusa.com/projects/impulse) wheeled biped project
 
 These projects influenced the design space explored here, but L1-GT makes its own mechanical and architectural trade-offs.
 
@@ -145,19 +110,13 @@ These projects influenced the design space explored here, but L1-GT makes its ow
 
 ## contributions
 
-Contributions are welcome, particularly:
-- build notes and corrections
-- BOM substitutions
-- mechanical improvements
-- calibration data and failure reports
-
-Please see `CONTRIBUTING.md` for details.
+Contributions are welcome, but see [`CONTRIBUTING.md`](CONTRIBUTING.md) for details.
 
 ---
 
 ## acknowledgements
 
-L1-GT is developed and built as a research platform for embodied Intelligence & collective robotics at UNSW.
+L1-GT is developed and built as a research platform at UNSW.
 
 ---
 

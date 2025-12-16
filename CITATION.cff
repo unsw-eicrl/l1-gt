@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "L1-GT: an open wheeled-biped research platform"
+message: "If you use this work, please cite it as below."
+type: software
+
+authors:
+  - family-names: Obst
+    given-names: Oliver
+    affiliation: "School of Computer Science and Engineering, UNSW, Sydney NSW 2052"
+    orcid: https://orcid.org/0000-0002-8284-2062
+
+repository-code: https://github.com/unsw-eicrl/l1-gt
+url: https://github.com/unsw-eicrl/l1-gt
+
+license: CERN-OHL-W-2.0
+keywords:
+  - robotics
+  - wheeled biped
+  - embodied intelligence
+  - robot learning
+  - open hardware
+
+date-released: 2026-01-19
+
